@@ -56,6 +56,6 @@ int main()
     printf("El espacio total ocupado es %dMB\n",espacio_total);
     printf("El espacio total ocupado en GB es %f\n",espacio_total_gb);
     printf("El porcentaje de disco ocupado es %.2f%%\n", porcentaje); 
-    printf("El espacio total del disco es %dGB\n",espacio_disco);
+    printf("El espacio total del disco es %fGB\n",espacio_disco);
     return 0;
 }
