@@ -41,7 +41,7 @@ public class Main {
             System.out.println("El estudiante aprobo la unidad");
         }
 
-        //Comprobación del nivel de desempeño del estudianet
+        //Comprobación del nivel de desempeño del estudiante
         if (notafinal >= 9 && notafinal <=10) {
             System.out.println("El nivel de desempeño del estudiante es Exelente");
         }
