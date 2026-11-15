@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        //Declaración de variables
         float NOTA_MIN = 7.0f;
         float nota_eval_ind, nota_eval_final, nota_trabajo_grup, notafinal = 0.0f;
         float nota_eval_ind_p, nota_eval_final_p, nota_trabajo_grup_p = 0.0f;
         Scanner sc = new Scanner(System.in);
-
+        
+        //Registro de las notas
         System.out.println("Ingrese la nota de la evaluación individual");
         nota_eval_ind = sc.nextFloat();
         System.out.println("Ingrese la nota de la evaluación final");
@@ -15,6 +16,7 @@ public class Main {
         System.out.println("Ingrese la nota del trabajo grupal");
         nota_trabajo_grup = sc.nextFloat();
 
+        //Validación de las notas
         if (nota_eval_ind >= 0 && nota_eval_ind <= 10 && nota_eval_final >= 0 && nota_eval_final <= 10
                 && nota_trabajo_grup >= 0 && nota_trabajo_grup <= 10) {
             nota_eval_ind_p = nota_eval_ind * 0.30f;
@@ -31,6 +33,7 @@ public class Main {
         System.out.println("La nota de la evaluación final es: " + nota_eval_final);
         System.out.println("El promedio ponderado del estudiante es: " + notafinal);
 
+        //Comprobación si el estudiante aprobo o no la unidad
         if (notafinal < NOTA_MIN) {
             System.out.println("El estudiane reprobo la unidad");
         }
@@ -38,6 +41,7 @@ public class Main {
             System.out.println("El estudiante aprobo la unidad");
         }
 
+        //Comprobación del nivel de desempeño del estudianet
         if (notafinal >= 9 && notafinal <=10) {
             System.out.println("El nivel de desempeño del estudiante es Exelente");
         }
@@ -54,6 +58,7 @@ public class Main {
             System.out.println("El nivel de desempeño del estudiante es Deficiente");
         }
 
+        //Mensaje si el estudiante necesita refuerzo academico o si sobresale academicamente
         if (notafinal < 7) {
             System.out.println("El estudiante requiere refuerzo academico");
         }
